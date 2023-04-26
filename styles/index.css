@@ -1,0 +1,149 @@
+/* red outline for debugging / styling */
+/* * {
+    border: 1px solid red;
+} */
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    overflow: hidden;
+}
+
+/* background video */
+
+video {
+    /* display: none; */
+    position: absolute;
+    object-position: center;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+ /*  HOME PAGE CONTENT  */
+#content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#codeBoost {
+    position: absolute;
+    background-color: rgb(51, 51, 53, 0.9);
+    color: white;
+    border: 1px solid rgb(195, 42, 255);
+    padding: 15px 25px;
+    margin-bottom: 300px;
+    border-radius: 10px;
+    flex-direction: column;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#codeBoost h1 {
+    font-size: 60px;
+}
+
+#codeBoost h4 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.mainContainer {
+    position: absolute;
+}
+
+#suBtnBox {
+    padding: 2px;
+    border-radius: 10px;
+    background-color: rgba(205, 164, 221, 0.8);
+    box-shadow: inset 0 0 10px rgb(195, 42, 255);
+    margin-top: 25px;
+}
+
+#signUpBtn {
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+    opacity: 1;
+    font-size: 35px;
+    padding: 5px 30px;
+}
+
+ /*  SIGN UP POP UP BOX  */
+
+.signUpBox {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(51, 51, 53);
+    border: 1px solid rgb(195, 42, 255);
+    font-family: 'Rajdhani', sans-serif;
+    padding:  75px 50px;
+    border-radius: 20px;
+    box-shadow: rgb(195, 42, 255, 0.1) 0px 50px 100px -20px, rgba(0, 0, 0, 0.1) 0px 30px 60px -30px, rgba(10, 37, 64, 0.1) 0px -2px 6px 0px inset;
+}
+
+.headingBox {
+    color: white;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.signUpInput {
+    max-width: 220px;
+}
+
+.userPassBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.userPassBox input {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 0;
+    padding-left: 5px;
+}
+
+.userPassBox button {
+    border-radius: 5px;
+}
+
+.forgotBox {
+    display: flex;
+    margin-top: 50px;
+}
+
+.closeBtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 25px;
+    height: 15px;
+    opacity: 0.3;
+  }
+  .closeBtn:hover {
+    opacity: 1;
+  }
+  .closeBtn:before, .closeBtn:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 15px;
+    width: 2px;
+    background-color: #a9a9a9;
+  }
+  .closeBtn:before {
+    transform: rotate(45deg);
+  }
+  .closeBtn:after {
+    transform: rotate(-45deg);
+  }
